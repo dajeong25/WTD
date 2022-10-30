@@ -21,10 +21,10 @@
     <link href="static/css/styles.css" rel="stylesheet" />
 </head>
 <body>
-
     <header>
         <h1 class="site-heading text-center text-faded d-none d-lg-block">
             <span class="site-heading-upper text-primary mb-3">WTD</span>
+            2019 vs 2022년 천만 영화 흥행 요인 분석
         </h1>
     </header>
 
@@ -53,57 +53,82 @@
         </div>
     </nav>
 
-    <!-- Main -->
-    <main class="main-video" id="main-video">
-        <div class="video">
-            <video src="static/assets/video/parasite.mp4" autoplay muted loop></video>
-        </div>
-        <div class="description">
-            <h1>기생충</h1>
-            <h3>PARASITE</h3>
-            <p>
-                전원백수로 살 길 막막하지만 사이는 좋은 기택(송강호) 가족. 
-                장남 기우(최우식)에게 명문대생 친구가 연결시켜 준 고액 과외 자리는 모처럼 싹튼 고정수입의 희망이다. 
-                온 가족의 도움과 기대 속에 박사장(이선균) 집으로 향하는 기우. 
-                글로벌 IT기업 CEO인 박사장의 저택에 도착하자 젊고 아름다운 사모님 연교(조여정)가 기우를 맞이한다. 
-                그러나 이렇게 시작된 두 가족의 만남 뒤로, 걷잡을 수 없는 사건이 기다리고 있었으니…
-            </p>
-            <div class="buttons">
-                <button class="detail"><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=161967"><i class="fa-solid fa-circle-info"></i>상세 정보</a></button>
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Banner -->
+        <section id="banner">
+            <div class="inner">
+                <div class="logo"><span class="icon fa-gem"><i class="fa-regular fa-folder-open"></i></span></div>
+                <h2>데이터 분석 5 STEPS</h2>
             </div>
-        </div>
-        <div class="age-info">
-            <i class="fa-solid fa-rotate-right"></i>
-            <div class="age">15+</div>
-        </div>
-    </main>
+        </section>
 
-    <!-- Video -->
-    <section class="section-video">
-        <div class="video">
-            <video src="static/assets/video/theroundup.mp4" autoplay muted loop></video>
-        </div>
-        <div class="description">
-            <h1>범죄도시2</h1>
-            <h3>THEROUNDUP</h3>
-            <p>
-                가리봉동 소탕작전 후 4년 뒤, 금천서 강력반은 베트남으로 도주한 용의자를 인도받아 오라는 미션을 받는다.
-                괴물형사 ‘마석도’(마동석)와 ‘전일만’(최귀화) 반장은 현지 용의자에게서 수상함을 느끼고,
-                그의 뒤에 무자비한 악행을 벌이는 ‘강해상’(손석구)이 있음을 알게 된다.
-                ‘마석도’와 금천서 강력반은 한국과 베트남을 오가며 역대급 범죄를 저지르는
-                ‘강해상’을 본격적으로 쫓기 시작하는데...
-                나쁜 놈들 잡는 데 국경 없다!
-                통쾌하고 화끈한 범죄 소탕 작전이 다시 펼쳐진다!
-            </p>
-            <div class="buttons col">
-                <button class="detail"><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=192608"><i class="fa-solid fa-circle-info"></i>상세 정보</a></button>
-            </div>
-        </div>
-        <div class="age-info">
-            <i class="fa-solid fa-rotate-right"></i>
-            <div class="age">15+</div>
-        </div>
-    </section>
+        <!-- Wrapper -->
+        <section id="wrapper">
+
+            <!-- One -->
+            <section id="one" class="wrapper spotlight style1">
+                <div class="inner">
+                    <a href="step_1.html" class="image"><img src="static/assets/img/imdb크롤링.jpeg" alt="" /></a>
+                    <div class="content">
+                        <h2 class="major">STEP 1. 웹 크롤링</h2>
+                        <p>네이버, 다음 영화, IMDB, Rotten Tomatoes에서 Review&별점 수집 및 크롤링 모듈화 진행</p><br>
+
+                       <a href="step_1.html">Learn more</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Two -->
+            <section id="two" class="wrapper alt spotlight style2">
+                <div class="inner">
+                    <a href="step_2.html" class="image"><img src="static/assets/img/네이버관객워드클라우드(2).jpeg" alt="" /></a>
+                    <div class="content">
+                        <h2 class="major">STEP 2. 워드 클라우드</h2>
+                        <p>텍스트 전처리 후, 빈도수 많은 단어를 통해 흥행 요인 키워드 추측 및 시각화</p><br>
+                        <a href="step_2.html" class="special">Learn more</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Three -->
+            <section id="three" class="wrapper spotlight style3">
+                <div class="inner">
+                    <a href="step_3.html" class="image"><img src="static/assets/img/네이버관객감성머신러닝(1).jpeg" alt="" /></a>
+                    <div class="content">
+                        <h2 class="major">STEP 3. 감성분석</h2>
+                        <p>각 리뷰의 별점과 긍정어, 부정어 포함 정도에 따른 긍/부정 라벨링 & 예측모델 구현</p><br>
+                        <a href="step_3.html" class="special">Learn more</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Four -->
+            <section id="four" class="wrapper alt spotlight style4">
+                <div class="inner">
+                    <a href="step_4.html" class="image"><img src="static/assets/img/흥행요인분석.jpg" alt="" /></a>
+                    <div class="content">
+                        <h2 class="major">STEP 4. 흥행요인분석</h2>
+                        <p>워드 클라우드 결과와 감성분석을 토대로 도출된 흥행 키워드들에 대한 추가 분석</p><br>
+                        <a href="step_4.html" class="special">Learn more</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Five -->
+            <section id="five" class="wrapper spotlight style5">
+                <div class="inner">
+                    <a href="step_5.html" class="image"><img src="static/assets/img/유사도분석추천.jpg" alt="" /></a>
+                    <div class="content">
+                        <h2 class="major">STEP 5. 유사한 영화 추천</h2>
+                        <p>범죄도시2/기생충 흥행요인을 통한 줄거리 기반 코사인 유사도 영화 추천</p><br>
+                        <a href="step_5.html" class="special">Learn more</a>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </div>
 
     <!-- Footer-->
     <footer class="footer text-faded text-center py-5" id="footer">
